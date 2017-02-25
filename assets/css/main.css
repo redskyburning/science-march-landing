@@ -603,7 +603,7 @@
 		position: relative;
 	}
 
-		.image:before {
+		/*.image:before {
 			-moz-pointer-events: none;
 			-webkit-pointer-events: none;
 			-ms-pointer-events: none;
@@ -619,7 +619,7 @@
 			position: absolute;
 			top: 0;
 			width: 100%;
-		}
+		}*/
 
 		.image img {
 			border-radius: 4px;
@@ -1535,7 +1535,7 @@
 		@media screen and (max-width: 736px) {
 
 			#main article {
-				padding: 3.5rem 2rem 0.5rem 2rem ;
+				padding: 3.5rem 2rem 2rem 2rem ;
 			}
 
 				#main article .close:before {
@@ -1551,7 +1551,7 @@
 		@media screen and (max-width: 480px) {
 
 			#main article {
-				padding: 3rem 1.5rem 0.5rem 1.5rem ;
+				padding: 3rem 1.5rem 1.5rem 1.5rem ;
 			}
 
 		}

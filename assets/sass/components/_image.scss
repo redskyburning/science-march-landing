@@ -12,7 +12,7 @@
 		display: inline-block;
 		position: relative;
 
-		&:before {
+		/*&:before {
 			@include vendor('pointer-events', 'none');
 			background-image: url('../../images/overlay.png');
 			background-color: _palette(bg-overlay);
@@ -25,7 +25,7 @@
 			position: absolute;
 			top: 0;
 			width: 100%;
-		}
+		}*/
 
 		img {
 			border-radius: _size(border-radius);

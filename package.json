@@ -1,7 +1,7 @@
 {
-  "name": "test3",
-  "version": "1.0.0",
-  "description": "Dimension by HTML5 UP html5up.net | @ajlkn Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)",
+  "name": "Science March Landing",
+  "version": "1.0.1",
+  "description": "",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

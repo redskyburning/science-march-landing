@@ -1,0 +1,30 @@
+.collapsable {
+  $c:&;
+
+  &__expander, &__collapser {
+    display:flex;
+    justify-content:flex-start;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+  }
+
+  &__expander {
+    //margin-top:-1.25em;
+  }
+
+  &.is-collapsed {
+    #{$c}__body {
+      display:none;
+    }
+
+    #{$c}__collapser {
+      display:none;
+    }
+  }
+
+  &:not(.is-collapsed) {
+    #{$c}__expander {
+      display:none;
+    }
+  }
+}

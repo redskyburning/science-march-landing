@@ -992,6 +992,25 @@ button {
   line-height: calc(2.75rem - 2px);
 }
 
+.collapsable__expander, .collapsable__collapser {
+  display: flex;
+  justify-content: flex-start;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+}
+
+.collapsable.is-collapsed .collapsable__body {
+  display: none;
+}
+
+.collapsable.is-collapsed .collapsable__collapser {
+  display: none;
+}
+
+.collapsable:not(.is-collapsed) .collapsable__expander {
+  display: none;
+}
+
 /* BG */
 #bg {
   -moz-transform: scale(1.0);

@@ -410,13 +410,12 @@
 
         $('.collapsable__expander').click(function(e){
             e.preventDefault();
-            $('.collapsable').addClass(collapsedClass);
-            $(this).parent().removeClass(collapsedClass);
+            $(this).parents('.collapsable').removeClass(collapsedClass);
         });
 
         $('.collapsable__collapser').click(function(e){
             e.preventDefault();
-            $(this).parent().addClass(collapsedClass);
+            $(this).parents('.collapsable').addClass(collapsedClass);
         });
     });
 

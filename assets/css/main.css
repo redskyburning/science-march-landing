@@ -156,10 +156,6 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 
 h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
   border-bottom: solid 1px #ffffff;
-  width: -moz-max-content;
-  width: -webkit-max-content;
-  width: -ms-max-content;
-  width: max-content;
   padding-bottom: 0.5rem;
   margin: 0 0 2rem 0;
 }
@@ -999,6 +995,10 @@ button {
   letter-spacing: .12em;
 }
 
+.collapsable__expander-button, .collapsable__collapser-button {
+  display: inline-block;
+}
+
 .collapsable.is-collapsed .collapsable__body {
   display: none;
 }
@@ -1009,6 +1009,10 @@ button {
 
 .collapsable:not(.is-collapsed) .collapsable__expander {
   display: none;
+}
+
+.collapsable .button + .button {
+  margin-left: 15px;
 }
 
 /* BG */
@@ -1175,6 +1179,15 @@ body.is-loading #bg:before {
   width: 1px;
   height: calc(3.5rem + 1px);
   background: #ffffff;
+}
+
+#header > nav:not(:first-of-type) {
+  margin-top: 2rem;
+}
+
+#header > nav:not(:first-of-type):before {
+  height: calc(2rem + 1px);
+  top: calc((2rem * -1) - 1px);
 }
 
 #header > :first-child {

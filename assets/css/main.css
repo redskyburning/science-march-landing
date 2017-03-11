@@ -999,6 +999,10 @@ button {
   letter-spacing: .12em;
 }
 
+.collapsable__expander-button, .collapsable__collapser-button {
+  display: inline-block;
+}
+
 .collapsable.is-collapsed .collapsable__body {
   display: none;
 }
@@ -1009,6 +1013,10 @@ button {
 
 .collapsable:not(.is-collapsed) .collapsable__expander {
   display: none;
+}
+
+.collapsable .button + .button {
+  margin-left: 15px;
 }
 
 /* BG */

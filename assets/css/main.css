@@ -1177,6 +1177,15 @@ body.is-loading #bg:before {
   background: #ffffff;
 }
 
+#header > nav:not(:first-of-type) {
+  margin-top: 2rem;
+}
+
+#header > nav:not(:first-of-type):before {
+  height: calc(2rem + 1px);
+  top: calc((2rem * -1) - 1px);
+}
+
 #header > :first-child {
   margin-top: 0;
 }
